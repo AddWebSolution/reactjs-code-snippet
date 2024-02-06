@@ -1,0 +1,10 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --dark-bg-color: black;
+    --light-bg-color: white;
+    --dark-color: white;
+    --light-color: black;
+    --color-toggle-light: yellow;
+    --color-toggle-dark: bisque;
+}
