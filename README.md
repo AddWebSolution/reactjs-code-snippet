@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# React Snippet Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the React Snippet project, designed to streamline development practices and enhance code reusability.
 
-## Available Scripts
+## Folder Structure
 
-In the project directory, you can run:
+The project follows a standardized folder structure for best practices:
 
-### `npm start`
+1. **assets**: This folder is dedicated to storing images, CSS, JavaScript, and font files in their respective directories for easy access and management.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **components**: Common React components reside here to promote component reusability across the project.
+3. **helpers**: Useful common functions are stored in this folder for repeated use throughout the codebase.
+4. **hooks**: Custom React hooks are stored here, providing reusable logic across different components.
+5. **pages**: This folder holds code for different routes within the application. Developers will spend a significant amount of time here, utilizing hooks, assets, and helpers to build out various pages.
+6. **providers**: Different context providers are stored here, facilitating the management and sharing of application state.
+7. **redux**: Redux slices and the main store file are stored in this folder, helping manage application-wide state.
+8. **styles**: CSS files, including global styles, variable CSS, and route-specific styles, are organized within this folder.
+9. **utils**: Small code snippets, static variables, and data files that are used throughout the application are stored here for easy access and management.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Organization
 
-### `npm test`
+- **router.js**: This file contains the application router, where routes from the pages folder are configured.
+- **app.js**: Basic configurations such as defining Redux providers and themes are set up here. Additionally, the router from router.js is integrated into this file.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## File Imports
 
-### `npm run build`
+To simplify file imports, you can use absolute paths from the root directory instead of navigating through relative paths. For example:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```javascript
+import { helperFunction } from 'helpers/helperFunction';
+import { itemSlice } from 'redux/itemSlice';
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The `package.json` file contains all the necessary configurations for starting the server.
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To help developers familiarize themselves with the project's structure, dummy functions, hooks, and files have been provided. These resources are located within their respective folders in the project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Default Path Functionalities
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Functionalities have been deployed at the default path ("/") to showcase and understand the practical usage of helpers, hooks, and utils. Developers can explore these functionalities to gain insights into their usage within the project.
